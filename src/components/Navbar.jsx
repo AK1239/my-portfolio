@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,18 +19,18 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
-              <a href="#home" className="nav-link">
+              <Link to="home" smooth={true} duration={800} className="nav-link cursor-pointer">
                 Home
-              </a>
-              <a href="#about" className="nav-link">
+              </Link>
+              <Link to="about" smooth={true} duration={800} className="nav-link cursor-pointer">
                 About
-              </a>
-              <a href="#projects" className="nav-link">
+              </Link>
+              <Link to="projects" smooth={true} duration={800} className="nav-link cursor-pointer">
                 Projects
-              </a>
-              <a href="#contact" className="nav-link">
+              </Link>
+              <Link to="contact" smooth={true} duration={800} className="nav-link cursor-pointer">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -60,18 +61,18 @@ const Navbar = () => {
       <CSSTransition in={isMenuOpen} timeout={300} classNames="mobile-menu" unmountOnExit nodeRef={nodeRef}>
         <div ref={nodeRef} className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <a href="#home" className="nav-link block">
+            <Link to="home" smooth={true} duration={800} className="nav-link block cursor-pointer" onClick={() => setIsMenuOpen(false)}>
               Home
-            </a>
-            <a href="#about" className="nav-link block">
+            </Link>
+            <Link to="about" smooth={true} duration={800} className="nav-link block cursor-pointer" onClick={() => setIsMenuOpen(false)}>
               About
-            </a>
-            <a href="#projects" className="nav-link block">
+            </Link>
+            <Link to="projects" smooth={true} duration={800} className="nav-link block cursor-pointer" onClick={() => setIsMenuOpen(false)}>
               Projects
-            </a>
-            <a href="#contact" className="nav-link block">
+            </Link>
+            <Link to="contact" smooth={true} duration={800} className="nav-link block cursor-pointer" onClick={() => setIsMenuOpen(false)}>
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </CSSTransition>

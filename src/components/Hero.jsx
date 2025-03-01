@@ -17,17 +17,18 @@ const Hero = () => {
           </div>
 
           <div className="space-y-8 order-2 lg:order-1">
-            <div className="space-y-4">
+            <div className="space-y-4 text-center sm:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
                 Hi, I'm <span className="text-blue-600">Akil Khatri</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-600">Software Developer</h2>
               <p className="text-lg text-gray-600 max-w-2xl">
-                I craft elegant solutions to complex problems, turning ideas into reality through clean and efficient code.
+                I am a developer who wrties clean code, works well in teams, and turn your ideas into reality. My passion is building real-life
+                projects 🚀
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-4 justify-center sm:justify-start">
               <a href="#projects" className="btn-primary">
                 View My Work
               </a>
@@ -39,7 +40,7 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="flex gap-6">
+            <div className="flex gap-6 justify-center sm:justify-start">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon group" aria-label="GitHub Profile">
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                   <path

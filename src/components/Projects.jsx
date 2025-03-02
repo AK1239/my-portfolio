@@ -27,8 +27,8 @@ const projects = [
     id: 3,
     title: "PapersHub",
     description:
-      "An all in one platform for students to have access to all their academic needs, with a clean user experience. Includes notes, summaries, past papers and many more!",
-    image: "/images/papershub.png",
+      "A full stack web application that is an all in one platform for students to have access to all their academic needs, with a clean user experience!",
+    image: "/images/paperhub.png",
     githubLink: "https://github.com/AK1239/papershub-main",
     liveLink: "https://papershub.co.tz",
     techStack: ["HTML", "CSS", "JavaScript", "Django", "SQLite"],
@@ -49,8 +49,8 @@ const Projects = () => {
           <h2 className="text-4xl font-bold mb-4 text-gray-800">My Projects</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on. Each represents different challenges and
-            learning experiences.
+            Here are some of the recent projects I've worked on. Each represents different
+            challenges and learning experiences.
           </p>
         </motion.div>
 

@@ -1,5 +1,3 @@
-import profileImg from "../assets/profile.png";
-
 const Hero = () => {
   return (
     <section
@@ -12,7 +10,7 @@ const Hero = () => {
             <div className="relative flex justify-center">
               <div className="absolute inset-0 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
               <img
-                src={profileImg}
+                src="/images/profile.png"
                 alt="Akil Khatri"
                 className="relative rounded-full w-48 h-48 sm:w-72 sm:h-72 object-cover mx-auto"
               />

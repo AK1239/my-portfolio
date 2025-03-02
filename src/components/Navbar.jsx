@@ -11,7 +11,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
+            <a
+              href="#"
+              className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300"
+            >
               AK
             </a>
           </div>
@@ -31,6 +34,14 @@ const Navbar = () => {
               <Link to="contact" smooth={true} duration={800} className="nav-link cursor-pointer">
                 Contact
               </Link>
+              <a
+                href="/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link cursor-pointer"
+              >
+                Resume
+              </a>
             </div>
           </div>
 
@@ -44,12 +55,32 @@ const Navbar = () => {
             >
               <span className="sr-only">Open main menu</span>
               {!isMenuOpen ? (
-                <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                  className="block h-6 w-6"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               ) : (
-                <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="block h-6 w-6"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               )}
             </button>
@@ -58,21 +89,59 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <CSSTransition in={isMenuOpen} timeout={300} classNames="mobile-menu" unmountOnExit nodeRef={nodeRef}>
+      <CSSTransition
+        in={isMenuOpen}
+        timeout={300}
+        classNames="mobile-menu"
+        unmountOnExit
+        nodeRef={nodeRef}
+      >
         <div ref={nodeRef} className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <Link to="home" smooth={true} duration={800} className="nav-link block cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              to="home"
+              smooth={true}
+              duration={800}
+              className="nav-link block cursor-pointer"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Home
             </Link>
-            <Link to="about" smooth={true} duration={800} className="nav-link block cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              to="about"
+              smooth={true}
+              duration={800}
+              className="nav-link block cursor-pointer"
+              onClick={() => setIsMenuOpen(false)}
+            >
               About
             </Link>
-            <Link to="projects" smooth={true} duration={800} className="nav-link block cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={800}
+              className="nav-link block cursor-pointer"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Projects
             </Link>
-            <Link to="contact" smooth={true} duration={800} className="nav-link block cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={800}
+              className="nav-link block cursor-pointer"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Contact
             </Link>
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link block cursor-pointer"
+            >
+              Resume
+            </a>
           </div>
         </div>
       </CSSTransition>

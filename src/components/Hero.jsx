@@ -45,7 +45,7 @@ const Hero = () => {
 
             <div className="flex gap-6 justify-center sm:justify-start">
               <a
-                href="https://github.com"
+                href="https://github.com/AK1239"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon group"
@@ -60,7 +60,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/akil-khatri-9781532b8/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon group"
@@ -71,7 +71,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:akilkhatri235@gmail.com"
                 className="social-icon group"
                 aria-label="Email Contact"
               >

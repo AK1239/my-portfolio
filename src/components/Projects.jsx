@@ -115,6 +115,26 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* See All Projects Link */}
+        <motion.div
+          className="mt-20 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <a
+            href="https://github.com/AK1239"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-base font-medium rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+          >
+            <FaGithub className="text-xl" />
+            See All My Projects
+            <FaExternalLinkAlt className="text-sm" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );

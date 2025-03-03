@@ -31,6 +31,14 @@ const Navbar = () => {
               <Link to="projects" smooth={true} duration={800} className="nav-link cursor-pointer">
                 Projects
               </Link>
+              <Link
+                to="testimonials"
+                smooth={true}
+                duration={800}
+                className="nav-link cursor-pointer"
+              >
+                Testimonials
+              </Link>
               <Link to="contact" smooth={true} duration={800} className="nav-link cursor-pointer">
                 Contact
               </Link>
@@ -124,6 +132,15 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
+            </Link>
+            <Link
+              to="testimonials"
+              smooth={true}
+              duration={800}
+              className="nav-link block cursor-pointer"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Testimonials
             </Link>
             <Link
               to="contact"

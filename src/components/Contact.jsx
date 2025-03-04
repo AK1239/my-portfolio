@@ -69,7 +69,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0 }}
@@ -93,7 +93,7 @@ const Contact = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-white rounded-2xl shadow-lg p-8"
+            className="bg-white rounded-2xl shadow-lg p-4 sm:p-8"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -160,7 +160,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div className="bg-white rounded-2xl shadow-lg p-8">
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-8">
               <h3 className="text-2xl font-bold mb-6">Other Ways to Connect</h3>
               <div className="space-y-6">
                 <a

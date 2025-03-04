@@ -20,8 +20,8 @@ const testimonials = [
     id: 3,
     name: "Husayn Moledina",
     role: "Professional Math Tutor",
-    image: "/images/testimonial3.jpg",
-    text: "Akil brought both technical expertise and creative thinking to our projects. His commitment to writing clean.",
+    image: "/images/moledina.jpg",
+    text: "Akil did an incredible job building my tutoring website. It’s super easy to use, looks great and makes running my online courses so much simpler!",
   },
 ];
 
@@ -72,11 +72,7 @@ const Testimonials = () => {
                     />
                   </div>
                 </div>
-                <p className="text-gray-600 mb-6 relative">
-                  {/* <span className="text-3xl text-blue-600 absolute -left-2 -top-3">"</span> */}"
-                  {testimonial.text}"
-                  {/* <span className="text-3xl text-blue-600 absolute -right-2">"</span> */}
-                </p>
+                <p className="text-gray-600 mb-6 relative">{testimonial.text}"</p>
                 <h4 className="font-bold text-xl text-blue-600 mb-1">{testimonial.name}</h4>
                 <p className="text-gray-500 text-sm">{testimonial.role}</p>
               </motion.div>

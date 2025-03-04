@@ -28,15 +28,6 @@ const techStack = [
   { name: "Next.js", icon: <SiNextdotjs className="w-12 h-12 text-black" /> },
 ];
 
-const companies = [
-  "/images/andalusia.webp",
-  "/images/cats.webp",
-  "/images/dhis2.webp",
-  "/images/sansum.webp",
-  "/images/tma.webp",
-  "/images/tppl.webp",
-];
-
 const About = () => {
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-gray-50 to-white">

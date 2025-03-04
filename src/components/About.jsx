@@ -18,11 +18,9 @@ const techStack = [
   { name: "Express.js", icon: <SiExpress className="w-12 h-12 text-gray-800" /> },
   { name: "Flutter", icon: <SiFlutter className="w-12 h-12 text-blue-400" /> },
   { name: "TypeScript", icon: <SiTypescript className="w-12 h-12" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss className="w-12 h-12 text-blue-400" /> },
   { name: "MongoDB", icon: <SiMongodb className="w-12 h-12 text-green-500" /> },
   { name: "PostgreSQL", icon: <SiPostgresql className="w-12 h-12 text-blue-500" /> },
   { name: "Git", icon: <FaGit className="w-12 h-12 text-red-500" /> },
-  { name: "Java", icon: <FaJava className="w-12 h-12 text-red-600" /> },
   { name: "Docker", icon: <FaDocker className="w-12 h-12 text-blue-500" /> },
   { name: "Figma", icon: <SiFigma className="w-12 h-12 text-pink-500" /> },
   { name: "Next.js", icon: <SiNextdotjs className="w-12 h-12 text-black" /> },
@@ -118,7 +116,7 @@ const About = () => {
           <h3 className="text-3xl font-bold mb-12 text-center text-gray-800">
             My <span className="text-blue-600">Tech</span> Stack
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {techStack.map((tech, index) => (
               <motion.div
                 key={tech.name}

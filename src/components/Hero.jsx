@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-scroll";
+
 const Hero = () => {
   return (
     <section
@@ -38,15 +41,22 @@ const Hero = () => {
               className="flex flex-wrap items-center gap-4 justify-center sm:justify-start"
               aria-label="Call to action"
             >
-              <a href="#projects" className="btn-primary">
+              <Link
+                to="projects"
+                smooth={true}
+                duration={800}
+                className="btn-primary cursor-pointer"
+              >
                 View My Work
-              </a>
-              <a
-                href="#contact"
-                className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors duration-300"
+              </Link>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={800}
+                className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
               >
                 Get in Touch
-              </a>
+              </Link>
             </nav>
 
             <nav className="flex gap-6 justify-center sm:justify-start" aria-label="Social links">

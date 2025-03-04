@@ -89,8 +89,8 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-lg p-8"
@@ -154,8 +154,8 @@ const Contact = () => {
 
           {/* Alternative Contact Methods */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="space-y-8"

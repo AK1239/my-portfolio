@@ -88,7 +88,7 @@ const About = () => {
           viewport={{ once: true }}
         >
           <h3 className="text-3xl font-bold mb-12 text-center text-gray-800">
-            Educational <span className="text-blue-600">Journey</span>
+            Educational Journey
           </h3>
           <div className="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto transform hover:scale-105 transition-transform duration-300">
             <div className="flex flex-col md:flex-row items-center gap-8">

@@ -32,7 +32,7 @@ const Contact = () => {
           from_email: formData.email,
           message: formData.message,
         },
-        "S2h5ZTKjPQxSEh3jI" // Replace with your Public Key
+        "S2h5ZTKjPQxSEh3jI"
       );
 
       setStatus("success");
@@ -54,7 +54,7 @@ const Contact = () => {
     if (!status) return null;
 
     const messages = {
-      sending: { text: "Sending...", className: "bg-blue-100 text-blue-800" },
+      sending: { text: "", className: "" },
       success: { text: "Message sent successfully!", className: "bg-green-100 text-green-800" },
       error: {
         text: "Failed to send message. Please try again.",

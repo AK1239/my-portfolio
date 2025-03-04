@@ -30,11 +30,11 @@ const techStack = [
 
 const companies = [
   "/images/andalusia.webp",
-  "/images/cats.jpeg",
-  "/images/dhis2.png",
-  "/images/sansum.png",
-  "/images/tma.jpeg",
-  "/images/tppl.jpeg",
+  "/images/cats.webp",
+  "/images/dhis2.webp",
+  "/images/sansum.webp",
+  "/images/tma.webp",
+  "/images/tppl.webp",
 ];
 
 const About = () => {
@@ -95,7 +95,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-blue-100 rounded-full opacity-20"></div>
                 <img
-                  src="/images/udsm.png"
+                  src="/images/udsm.webp"
                   alt="UDSM Logo"
                   className="w-32 h-32 object-contain relative z-10"
                 />

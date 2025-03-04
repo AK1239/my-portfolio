@@ -20,18 +20,18 @@ const testimonials = [
     id: 3,
     name: "Husayn Moledina",
     role: "Professional Math Tutor",
-    image: "/images/moledina.jpg",
+    image: "/images/moledina.webp",
     text: "Akil did an incredible job building my tutoring website. It’s super easy to use, looks great and makes running my online courses so much simpler!",
   },
 ];
 
 const companies = [
   "/images/andalusia.webp",
-  "/images/cats.jpeg",
-  "/images/dhis2.png",
-  "/images/sansum.png",
-  "/images/tma.jpeg",
-  "/images/tppl.jpeg",
+  "/images/cats.webp",
+  "/images/dhis2.webp",
+  "/images/sansum.webp",
+  "/images/tma.webp",
+  "/images/tppl.webp",
 ];
 
 const Testimonials = () => {

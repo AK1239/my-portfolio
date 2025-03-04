@@ -8,7 +8,7 @@ const projects = [
     title: "Network Monitoring Web Application",
     description:
       "A full-stack application that provides real-time monitoring of network devices. Seamlessly add your network devices, connect switches and play monitor your network in real-time!",
-    image: "/images/network-monitoring.png",
+    image: "/images/network-monitoring.webp",
     githubLink: "https://github.com/AK1239/network-ping-app",
     liveLink: "https://youtu.be/y7o3MDPGLYY",
     techStack: ["React", "Express", "PostgreSQL", "Node.js"],
@@ -18,7 +18,7 @@ const projects = [
     title: "Sansum Investment",
     description:
       "A responsive website for a drinks-manufacturing business. Features a clean and modern design, easy navigation, and a responsive layout.",
-    image: "/images/sansum-investment.png",
+    image: "/images/sansum-investment.webp",
     githubLink: "https://github.com/AK1239/sansum-investment",
     liveLink: "https://sansuminvestment.tz",
     techStack: ["HTML", "CSS", "JavaScript"],
@@ -28,7 +28,7 @@ const projects = [
     title: "PapersHub",
     description:
       "A full stack web application that is an all in one platform for students to have access to all their academic needs, with a clean user experience!",
-    image: "/images/paperhub.png",
+    image: "/images/paperhub.webp",
     githubLink: "https://github.com/AK1239/papershub-main",
     liveLink: "https://papershub.co.tz",
     techStack: ["HTML", "CSS", "JavaScript", "Django", "SQLite"],

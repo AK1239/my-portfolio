@@ -7,7 +7,7 @@ const testimonials = [
     name: "John Smith",
     role: "Project Manager at TechCorp",
     image: "/images/profile.png",
-    text: "Akil is an exceptional developer who consistently delivers work. His attention to detail and problem-solving skills.",
+    text: "Akil is an exceptional developer who consistently delivers work. His attention to detail and problem-solving skills is exceptional.",
   },
   {
     id: 2,
@@ -47,7 +47,6 @@ const Testimonials = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold mb-4 text-gray-800">Testimonials</h2>
-            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Here's what people I've worked with have to say about our collaboration.
             </p>
@@ -72,7 +71,7 @@ const Testimonials = () => {
                     />
                   </div>
                 </div>
-                <p className="text-gray-600 mb-6 relative">{testimonial.text}"</p>
+                <p className="text-gray-600 mb-6 relative">"{testimonial.text}"</p>
                 <h4 className="font-bold text-xl text-blue-600 mb-1">{testimonial.name}</h4>
                 <p className="text-gray-500 text-sm">{testimonial.role}</p>
               </motion.div>

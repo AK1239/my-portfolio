@@ -46,8 +46,7 @@ const Projects = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-800">My Projects</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+          <h2 className="text-4xl font-bold mb-4 text-blue-600">My Projects</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Here are some of the recent projects I've worked on. Each represents different
             challenges and learning experiences.

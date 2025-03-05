@@ -8,7 +8,7 @@
 
 /* Navigation Links */
 .nav-link {
-  @apply text-gray-600 p-2 rounded-md text-sm font-medium transition-all duration-300 relative;
+  @apply p-2 rounded-md text-sm font-medium transition-all duration-300 relative;
 }
 
 .nav-link:hover {
@@ -24,13 +24,44 @@
   @apply bg-blue-800;
 }
 
+/*Rounded Button*/
+.rounded-button {
+  @apply bg-blue-600 text-white rounded-full transition-all duration-300 cursor-pointer;
+}
+
+.rounded-button:hover {
+  @apply bg-blue-700 shadow-lg;
+}
+
+.rounded-button:active {
+  @apply scale-95;
+}
+
+/*Github Button*/
+.github-button {
+  @apply bg-gray-800 text-white rounded-lg transition-colors;
+}
+
+.github-button:hover {
+  @apply bg-gray-700;
+}
+
+/*Live Demo Button*/
+.live-demo-button {
+  @apply bg-blue-600 text-white rounded-lg transition-colors;
+}
+
+.live-demo-button:hover {
+  @apply bg-blue-700;
+}
+
 /* Social Icons */
 .social-icon {
-  @apply p-3 rounded-full bg-gray-200 text-gray-800 transition-all duration-300 transform;
+  @apply p-3 rounded-full bg-gray-200 text-gray-600 transition-all duration-300 transform hover:scale-110;
 }
 
 .social-icon:hover {
-  @apply shadow-md;
+  @apply bg-blue-600 text-white shadow-md;
 }
 
 /* Mobile Menu Animation */

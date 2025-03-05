@@ -4,7 +4,16 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const nodeRef = useRef(null);
+
+  const navLinks = [
+    { to: "home", label: "Home" },
+    { to: "about", label: "About" },
+    { to: "projects", label: "Projects" },
+    { to: "testimonials", label: "Testimonials" },
+    { to: "contact", label: "Contact" },
+  ];
 
   return (
     <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
@@ -22,26 +31,21 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
-              <Link to="home" smooth={true} duration={800} className="nav-link cursor-pointer">
-                Home
-              </Link>
-              <Link to="about" smooth={true} duration={800} className="nav-link cursor-pointer">
-                About
-              </Link>
-              <Link to="projects" smooth={true} duration={800} className="nav-link cursor-pointer">
-                Projects
-              </Link>
-              <Link
-                to="testimonials"
-                smooth={true}
-                duration={800}
-                className="nav-link cursor-pointer"
-              >
-                Testimonials
-              </Link>
-              <Link to="contact" smooth={true} duration={800} className="nav-link cursor-pointer">
-                Contact
-              </Link>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  spy={true}
+                  smooth={true}
+                  duration={800}
+                  className={`nav-link cursor-pointer ${
+                    activeSection === link.to ? "text-blue-600 font-semibold" : ""
+                  }`}
+                  onSetActive={() => setActiveSection(link.to)}
+                >
+                  {link.label}
+                </Link>
+              ))}
               <a
                 href="/cv.pdf"
                 target="_blank"
@@ -106,51 +110,24 @@ const Navbar = () => {
       >
         <div ref={nodeRef} className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <Link
-              to="home"
-              smooth={true}
-              duration={800}
-              className="nav-link block cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              to="about"
-              smooth={true}
-              duration={800}
-              className="nav-link block cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              to="projects"
-              smooth={true}
-              duration={800}
-              className="nav-link block cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Projects
-            </Link>
-            <Link
-              to="testimonials"
-              smooth={true}
-              duration={800}
-              className="nav-link block cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
-            </Link>
-            <Link
-              to="contact"
-              smooth={true}
-              duration={800}
-              className="nav-link block cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                spy={true}
+                smooth={true}
+                duration={800}
+                className={`nav-link block cursor-pointer ${
+                  activeSection === link.to ? "text-blue-600 font-semibold" : ""
+                }`}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  setActiveSection(link.to);
+                }}
+              >
+                {link.label}
+              </Link>
+            ))}
             <a
               href="/cv.pdf"
               target="_blank"

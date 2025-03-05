@@ -52,7 +52,7 @@ const About = () => {
                 href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 cursor-pointer hover:shadow-lg hover:scale-105 active:scale-95"
+                className="px-6 py-3 rounded-button"
               >
                 Download CV
               </a>

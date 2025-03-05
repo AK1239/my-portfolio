@@ -97,7 +97,7 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 github-button"
                   >
                     <FaGithub /> GitHub
                   </a>
@@ -105,7 +105,7 @@ const Projects = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 live-demo-button"
                   >
                     <FaExternalLinkAlt /> Live Demo
                   </a>

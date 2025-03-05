@@ -53,7 +53,7 @@ const Hero = () => {
                 to="contact"
                 smooth={true}
                 duration={800}
-                className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
+                className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg cursor-pointer"
               >
                 Get in Touch
               </Link>

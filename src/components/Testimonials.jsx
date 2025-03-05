@@ -6,7 +6,7 @@ const testimonials = [
     id: 1,
     name: "Sansum Ltd",
     role: "Collaborators at Sansum",
-    image: "/images/sansum-testimonial.jpg",
+    image: "/images/sansum-testimonial.webp",
     text: "Akil is an exceptional developer who consistently delivers work. His attention to detail and problem-solving skills is exceptional.",
   },
   {

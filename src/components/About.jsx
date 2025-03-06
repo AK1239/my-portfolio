@@ -88,7 +88,7 @@ const About = () => {
             </p>
             <div className="flex gap-4 justify-center">
               <a
-                href="/cv.pdf"
+                href="/akil-cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-button"

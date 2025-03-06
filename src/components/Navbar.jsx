@@ -47,7 +47,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <a
-                href="/cv.pdf"
+                href="/akil-cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-link cursor-pointer"

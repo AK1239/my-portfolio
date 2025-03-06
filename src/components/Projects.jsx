@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "Network Monitoring Web Application",
     description:
-      "A full-stack application that provides real-time monitoring of network devices. Seamlessly add your network devices, connect switches and play monitor your network in real-time!",
+      "A full-stack application that provides real-time monitoring of network devices. Seamlessly add your network devices, connect switches and monitor your network in real-time!",
     image: "/images/network-monitoring.webp",
     githubLink: "https://github.com/AK1239/network-ping-app",
     liveLink: "https://youtu.be/y7o3MDPGLYY",

@@ -1,29 +1,68 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaDocker, FaGit, FaJava } from "react-icons/fa";
+import { FaReact, FaDocker, FaGit } from "react-icons/fa";
 import {
   SiExpress,
   SiFlutter,
   SiMongodb,
   SiPostgresql,
   SiTypescript,
-  SiTailwindcss,
   SiFigma,
   SiNextdotjs,
 } from "react-icons/si";
 import { Link } from "react-scroll";
 
 const techStack = [
-  { name: "React", icon: <FaReact className="w-12 h-12 text-purple-700" /> },
-  { name: "Express.js", icon: <SiExpress className="w-12 h-12 text-gray-800" /> },
-  { name: "Flutter", icon: <SiFlutter className="w-12 h-12 text-blue-400" /> },
-  { name: "TypeScript", icon: <SiTypescript className="w-12 h-12" /> },
-  { name: "MongoDB", icon: <SiMongodb className="w-12 h-12 text-green-500" /> },
-  { name: "PostgreSQL", icon: <SiPostgresql className="w-12 h-12 text-blue-500" /> },
-  { name: "Git", icon: <FaGit className="w-12 h-12 text-red-500" /> },
-  { name: "Docker", icon: <FaDocker className="w-12 h-12 text-blue-500" /> },
-  { name: "Figma", icon: <SiFigma className="w-12 h-12 text-pink-500" /> },
-  { name: "Next.js", icon: <SiNextdotjs className="w-12 h-12 text-black" /> },
+  {
+    name: "React",
+    icon: <FaReact className="w-12 h-12 text-purple-700" />,
+    link: "https://react.dev",
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress className="w-12 h-12 text-gray-800" />,
+    link: "https://expressjs.com",
+  },
+  {
+    name: "Flutter",
+    icon: <SiFlutter className="w-12 h-12 text-blue-400" />,
+    link: "https://flutter.dev",
+  },
+  {
+    name: "TypeScript",
+    icon: <SiTypescript className="w-12 h-12" />,
+    link: "https://www.typescriptlang.org",
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb className="w-12 h-12 text-green-500" />,
+    link: "https://www.mongodb.com",
+  },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql className="w-12 h-12 text-blue-500" />,
+    link: "https://www.postgresql.org",
+  },
+  {
+    name: "Git",
+    icon: <FaGit className="w-12 h-12 text-red-500" />,
+    link: "https://git-scm.com",
+  },
+  {
+    name: "Docker",
+    icon: <FaDocker className="w-12 h-12 text-blue-500" />,
+    link: "https://www.docker.com",
+  },
+  {
+    name: "Figma",
+    icon: <SiFigma className="w-12 h-12 text-pink-500" />,
+    link: "https://www.figma.com",
+  },
+  {
+    name: "Next.js",
+    icon: <SiNextdotjs className="w-12 h-12 text-black" />,
+    link: "https://nextjs.org",
+  },
 ];
 
 const About = () => {
@@ -118,22 +157,29 @@ const About = () => {
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {techStack.map((tech, index) => (
-              <motion.div
+              <a
                 key={tech.name}
-                className="group bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -5 }}
+                href={tech.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  {tech.icon}
-                </div>
-                <p className="font-medium text-gray-800 group-hover:text-blue-600 transition-colors">
-                  {tech.name}
-                </p>
-              </motion.div>
+                <motion.div
+                  className="group bg-white p-6 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    {tech.icon}
+                  </div>
+                  <p className="font-medium text-gray-800 group-hover:text-blue-600 transition-colors">
+                    {tech.name}
+                  </p>
+                </motion.div>
+              </a>
             ))}
           </div>
 

@@ -31,7 +31,7 @@ const Footer = () => {
               <FaXTwitter className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/akil-khatri-9781532b8/"
+              href="https://www.linkedin.com/in/akil-khatri-dev/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors"

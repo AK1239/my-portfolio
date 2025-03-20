@@ -76,7 +76,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/akil-khatri-9781532b8/"
+                href="https://www.linkedin.com/in/akil-khatri-dev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon group"

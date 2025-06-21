@@ -30,7 +30,7 @@ const projects = [
       "A full stack web application that is an all in one platform for students to have access to all their academic needs, with a clean user experience!",
     image: "/images/paperhub.webp",
     githubLink: "https://github.com/AK1239/papershub-main",
-    liveLink: "https://papershub.co.tz",
+    liveLink: "https://papersshub.netlify.app/",
     techStack: ["HTML", "CSS", "JavaScript", "Django", "SQLite"],
   },
 ];

@@ -25,13 +25,23 @@ const projects = [
   },
   {
     id: 3,
-    title: "PapersHub",
+    title: "Tanzanian Tutors",
     description:
-      "A full stack web application that is an all in one platform for students to have access to all their academic needs, with a clean user experience!",
-    image: "/images/paperhub.webp",
-    githubLink: "https://github.com/AK1239/papershub-main",
-    liveLink: "https://papersshub.netlify.app/",
-    techStack: ["HTML", "CSS", "JavaScript", "Django", "SQLite"],
+      "An educational platform built on Moodle that provides quality education at affordable prices, The platform offers various courses to help students excel at their grades.",
+    image: "/images/tanzanian-tutors.png",
+    githubLink: null,
+    liveLink: "https://tanzaniantutors.co.tz/",
+    techStack: ["Moodle", "Custom Plugins"],
+  },
+  {
+    id: 4,
+    title: "Neutralfy",
+    description:
+      "Neutralfy is a comprehensive carbon credit marketplace platform that democratizes carbon markets for Africa, It provides AI-driven verification, blockchain technology, and a multi-stakeholder ecosystem.",
+    image: "/images/neutralfy.png",
+    githubLink: "https://github.com/askmgm/neutralfy",
+    liveLink: "https://neutralfy.com",
+    techStack: ["React", "Express", "MySQL", "Node.js"],
   },
 ];
 
@@ -93,14 +103,16 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="flex gap-4">
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 github-button"
-                  >
-                    <FaGithub /> GitHub
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 github-button"
+                    >
+                      <FaGithub /> GitHub
+                    </a>
+                  )}
                   <a
                     href={project.liveLink}
                     target="_blank"

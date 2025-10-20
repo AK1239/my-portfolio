@@ -29,8 +29,12 @@ const companies = [
   "/images/andalusia.webp",
   "/images/cats.webp",
   "/images/dhis2.webp",
+  "/images/mgas.png",
   "/images/sansum.webp",
+  "/images/softnet.jpeg",
+  "/images/zalongwa.png",
   "/images/tma.webp",
+  "/images/udsm.webp",
   "/images/tppl.webp",
 ];
 
@@ -92,7 +96,7 @@ const Testimonials = () => {
             <h3 className="text-2xl font-bold mb-8 text-center text-gray-800">
               <span className="text-blue-600">Companies</span> I've Worked With
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8">
               {companies.map((logo, index) => (
                 <motion.div
                   key={index}

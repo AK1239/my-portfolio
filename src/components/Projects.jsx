@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
@@ -42,6 +41,17 @@ const projects = [
     githubLink: "https://github.com/askmgm/neutralfy",
     liveLink: "https://neutralfy.com",
     techStack: ["React", "Express", "MySQL", "Node.js"],
+  },
+  {
+    id: 5,
+    title: "IntelyFlow",
+    description:
+      "An intelligent stock and POS management system used to track inventory, make sales and get intelligent insights regarding your business. Transform your business with comprehensive modular platform featuring real-time analytics.",
+    image: "/images/intelyflow.png",
+    githubLink: null,
+    liveLink: "https://youtu.be/mFLLd6l4kew",
+    websiteLink: "https://intelyflow.com/",
+    techStack: ["React", "Express", "Node.js", "PostgreSQL"],
   },
 ];
 
@@ -113,6 +123,16 @@ const Projects = () => {
                       <FaGithub /> GitHub
                     </a>
                   )}
+                  {project.websiteLink && (
+                    <a
+                      href={project.websiteLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
+                    >
+                      <FaExternalLinkAlt /> Website
+                    </a>
+                  )}
                   <a
                     href={project.liveLink}
                     target="_blank"
@@ -139,7 +159,7 @@ const Projects = () => {
             href="https://github.com/AK1239"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-base font-medium rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+            className="inline-flex items-center gap-3 px-6 py-4 bg-linear-to-r from-blue-600 to-blue-700 text-white text-base font-medium rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
           >
             <FaGithub className="text-xl" />
             See All My Projects

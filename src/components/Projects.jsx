@@ -19,7 +19,7 @@ const projects = [
       "A responsive website for a drinks-manufacturing business. Features a clean and modern design, easy navigation, and a responsive layout.",
     image: "/images/sansum-investment.webp",
     githubLink: "https://github.com/AK1239/sansum-investment",
-    liveLink: "https://sansuminvestment.tz",
+    liveLink: "https://sansuminvestment.netlify.app",
     techStack: ["HTML", "CSS", "JavaScript"],
   },
   {

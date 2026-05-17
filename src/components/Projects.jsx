@@ -14,26 +14,17 @@ const projects = [
   },
   {
     id: 2,
-    title: "Sansum Investment",
+    title: "IntelyFlow",
     description:
-      "A responsive website for a drinks-manufacturing business. Features a clean and modern design, easy navigation, and a responsive layout.",
-    image: "/images/sansum-investment.webp",
-    githubLink: "https://github.com/AK1239/sansum-investment",
-    liveLink: "https://sansuminvestment.netlify.app",
-    techStack: ["HTML", "CSS", "JavaScript"],
+      "An intelligent stock and POS management system used to track inventory, make sales and get intelligent insights regarding your business. Transform your business with comprehensive modular platform featuring real-time analytics.",
+    image: "/images/intelyflow.png",
+    githubLink: null,
+    liveLink: "https://youtu.be/mFLLd6l4kew",
+    websiteLink: "https://intelyflow.com/",
+    techStack: ["React", "Express", "Node.js", "PostgreSQL"],
   },
   {
     id: 3,
-    title: "Tanzanian Tutors",
-    description:
-      "An educational platform built on Moodle that provides quality education at affordable prices, The platform offers various courses to help students excel at their grades.",
-    image: "/images/tanzanian-tutors.png",
-    githubLink: null,
-    liveLink: "https://tanzaniantutors.co.tz/",
-    techStack: ["Moodle", "Custom Plugins"],
-  },
-  {
-    id: 4,
     title: "Neutralfy",
     description:
       "Neutralfy is a comprehensive carbon credit marketplace platform that democratizes carbon markets for Africa, It provides AI-driven verification, blockchain technology, and a multi-stakeholder ecosystem.",
@@ -43,15 +34,14 @@ const projects = [
     techStack: ["React", "Express", "MySQL", "Node.js"],
   },
   {
-    id: 5,
-    title: "IntelyFlow",
+    id: 4,
+    title: "Sansum Investment",
     description:
-      "An intelligent stock and POS management system used to track inventory, make sales and get intelligent insights regarding your business. Transform your business with comprehensive modular platform featuring real-time analytics.",
-    image: "/images/intelyflow.png",
-    githubLink: null,
-    liveLink: "https://youtu.be/mFLLd6l4kew",
-    websiteLink: "https://intelyflow.com/",
-    techStack: ["React", "Express", "Node.js", "PostgreSQL"],
+      "A responsive website for a drinks-manufacturing business. Features a clean and modern design, easy navigation, and a responsive layout.",
+    image: "/images/sansum-investment.webp",
+    githubLink: "https://github.com/AK1239/sansum-investment",
+    liveLink: "https://sansuminvestment.netlify.app",
+    techStack: ["HTML", "CSS", "JavaScript"],
   },
 ];
 

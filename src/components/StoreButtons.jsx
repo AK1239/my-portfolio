@@ -1,13 +1,12 @@
 import { FaGooglePlay, FaApple } from "react-icons/fa";
-import { PESATRACK_LINKS } from "../data/pesatrack";
 
-const StoreButtons = ({ size = "default" }) => {
+const StoreButtons = ({ playStore, appStore, size = "default" }) => {
   const isLarge = size === "large";
 
   return (
     <div className={`flex flex-wrap gap-3 ${isLarge ? "gap-4" : ""}`}>
       <a
-        href={PESATRACK_LINKS.playStore}
+        href={playStore}
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex items-center gap-2.5 bg-black text-white rounded-xl font-medium transition-all duration-300 hover:bg-gray-900 hover:scale-[1.02] active:scale-[0.98] ${
@@ -23,7 +22,7 @@ const StoreButtons = ({ size = "default" }) => {
         </span>
       </a>
       <a
-        href={PESATRACK_LINKS.appStore}
+        href={appStore}
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex items-center gap-2.5 bg-blue-600 text-white rounded-xl font-medium transition-all duration-300 hover:bg-blue-500 hover:scale-[1.02] active:scale-[0.98] ${

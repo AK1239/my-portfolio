@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -78,10 +78,10 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold mb-4">
-            Let's <span className="text-blue-600">Connect</span>
+            Let&apos;s <span className="text-blue-600">Connect</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have a project in mind? I'd love to hear about it. Send me a message and let's create
+            Have a project in mind? I&apos;d love to hear about it. Send me a message and let&apos;s create
             something amazing together.
           </p>
         </motion.div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-scroll";
 
 const Hero = () => {
@@ -20,7 +19,7 @@ const Hero = () => {
                 width="288"
                 height="288"
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
               />
             </div>
           </div>
@@ -28,7 +27,7 @@ const Hero = () => {
           <article className="space-y-8 order-2 lg:order-1">
             <header className="space-y-4 text-center sm:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-                Hi, I'm <span className="text-blue-600">Akil Khatri</span>
+                Hi, I&apos;m <span className="text-blue-600">Akil Khatri</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-600">Software Developer</h2>
               <p className="text-lg text-gray-600 max-w-2xl">

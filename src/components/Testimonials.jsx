@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const testimonials = [
@@ -52,7 +51,7 @@ const Testimonials = () => {
           >
             <h2 className="text-4xl font-bold mb-4 text-gray-800">Testimonials</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Here's what people I've worked with have to say about our collaboration.
+              Here&apos;s what people I&apos;ve worked with have to say about our collaboration.
             </p>
           </motion.div>
 
@@ -75,7 +74,7 @@ const Testimonials = () => {
                     />
                   </div>
                 </div>
-                <p className="text-gray-600 mb-6 relative">"{testimonial.text}"</p>
+                <p className="text-gray-600 mb-6 relative">&ldquo;{testimonial.text}&rdquo;</p>
                 <h4 className="font-bold text-xl text-blue-600 mb-1">{testimonial.name}</h4>
                 <p className="text-gray-500 text-sm">{testimonial.role}</p>
               </motion.div>
@@ -94,7 +93,7 @@ const Testimonials = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold mb-8 text-center text-gray-800">
-              <span className="text-blue-600">Companies</span> I've Worked With
+              <span className="text-blue-600">Companies</span> I&apos;ve Worked With
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8">
               {companies.map((logo, index) => (

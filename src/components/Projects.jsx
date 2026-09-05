@@ -4,6 +4,17 @@ import { FaGithub, FaExternalLinkAlt, FaGooglePlay, FaApple } from "react-icons/
 
 const projects = [
   {
+    id: 2,
+    title: "IntelyFlow",
+    description:
+      "An intelligent stock and POS management system used to track inventory, make sales and get intelligent insights regarding your business. Transform your business with comprehensive modular platform featuring real-time analytics.",
+    image: "/images/intelyflow.png",
+    githubLink: null,
+    liveLink: "https://youtu.be/mFLLd6l4kew",
+    websiteLink: "https://intelyflow.com/",
+    techStack: ["React", "Express", "Node.js", "PostgreSQL"],
+  },
+  {
     id: 5,
     title: "PesaTrack",
     description:
@@ -28,36 +39,37 @@ const projects = [
     techStack: ["React", "Express", "PostgreSQL", "Node.js"],
   },
   {
-    id: 2,
-    title: "IntelyFlow",
+    id: 6,
+    title: "Ndotoni",
     description:
-      "An intelligent stock and POS management system used to track inventory, make sales and get intelligent insights regarding your business. Transform your business with comprehensive modular platform featuring real-time analytics.",
-    image: "/images/intelyflow.png",
+      "A mobile-first property rental platform built for Tanzania. Find verified rentals, browse listings on an interactive map, message landlords directly, and list your own property — all in one place.",
+    image: "/images/ndotoni.jpg",
     githubLink: null,
-    liveLink: "https://youtu.be/mFLLd6l4kew",
-    websiteLink: "https://intelyflow.com/",
-    techStack: ["React", "Express", "Node.js", "PostgreSQL"],
+    liveLink: "https://ndotoni.com",
+    detailPageLink: "/ndotoni",
+    showViewProject: true,
+    techStack: ["React", "TypeScript", "AWS Lambda"],
   },
-  {
-    id: 3,
-    title: "Neutralfy",
-    description:
-      "Neutralfy is a comprehensive carbon credit marketplace platform that democratizes carbon markets for Africa, It provides AI-driven verification, blockchain technology, and a multi-stakeholder ecosystem.",
-    image: "/images/neutralfy.png",
-    githubLink: "https://github.com/askmgm/neutralfy",
-    liveLink: "https://neutralfy.com",
-    techStack: ["React", "Express", "MySQL", "Node.js"],
-  },
-  {
-    id: 4,
-    title: "Sansum Investment",
-    description:
-      "A responsive website for a drinks-manufacturing business. Features a clean and modern design, easy navigation, and a responsive layout.",
-    image: "/images/sansum-investment.webp",
-    githubLink: "https://github.com/AK1239/sansum-investment",
-    liveLink: "https://sansuminvestment.netlify.app",
-    techStack: ["HTML", "CSS", "JavaScript"],
-  },
+  // {
+  //   id: 3,
+  //   title: "Neutralfy",
+  //   description:
+  //     "Neutralfy is a comprehensive carbon credit marketplace platform that democratizes carbon markets for Africa, It provides AI-driven verification, blockchain technology, and a multi-stakeholder ecosystem.",
+  //   image: "/images/neutralfy.png",
+  //   githubLink: "https://github.com/askmgm/neutralfy",
+  //   liveLink: "https://neutralfy.com",
+  //   techStack: ["React", "Express", "MySQL", "Node.js"],
+  // },
+  // {
+  //   id: 4,
+  //   title: "Sansum Investment",
+  //   description:
+  //     "A responsive website for a drinks-manufacturing business. Features a clean and modern design, easy navigation, and a responsive layout.",
+  //   image: "/images/sansum-investment.webp",
+  //   githubLink: "https://github.com/AK1239/sansum-investment",
+  //   liveLink: "https://sansuminvestment.netlify.app",
+  //   techStack: ["HTML", "CSS", "JavaScript"],
+  // },
 ];
 
 const Projects = () => {
@@ -73,13 +85,13 @@ const Projects = () => {
         >
           <h2 className="text-4xl font-bold mb-4 text-blue-600">My Projects</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Here are some of the recent projects I've worked on. Each represents different
+            Here are some of the recent projects I&apos;ve worked on. Each represents different
             challenges and learning experiences.
           </p>
         </motion.div>
 
         <div className="space-y-28">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
               key={project.id}
               className={`flex flex-col lg:flex-row gap-8 items-center`}
@@ -131,6 +143,14 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="flex flex-wrap gap-4">
+                  {project.showViewProject && project.detailPageLink && (
+                    <Link
+                      to={project.detailPageLink}
+                      className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
+                    >
+                      <FaExternalLinkAlt /> View Project
+                    </Link>
+                  )}
                   {project.githubLink && (
                     <a
                       href={project.githubLink}

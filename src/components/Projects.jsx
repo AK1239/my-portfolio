@@ -1,7 +1,20 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaGooglePlay, FaApple } from "react-icons/fa";
 
 const projects = [
+  {
+    id: 5,
+    title: "PesaTrack",
+    description:
+      "A private, offline-first expense tracker and budget manager that helps you understand where your money goes. Track income and expenses, manage budgets, and gain spending insights—all without an account or cloud sync.",
+    image: "/images/pesatrack.png",
+    githubLink: null,
+    liveLink: null,
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.akil.financetracker.finance_tracker",
+    appStoreLink: "https://apps.apple.com/tz/app/pesatrack/id6805447133",
+    techStack: ["Flutter", "Riverpod"],
+  },
   {
     id: 1,
     title: "Network Monitoring Web Application",
@@ -123,14 +136,36 @@ const Projects = () => {
                       <FaExternalLinkAlt /> Website
                     </a>
                   )}
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 live-demo-button"
-                  >
-                    <FaExternalLinkAlt /> Live Demo
-                  </a>
+                  {project.playStoreLink && (
+                    <a
+                      href={project.playStoreLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
+                    >
+                      <FaGooglePlay /> Google Play
+                    </a>
+                  )}
+                  {project.appStoreLink && (
+                    <a
+                      href={project.appStoreLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 live-demo-button"
+                    >
+                      <FaApple /> App Store
+                    </a>
+                  )}
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 live-demo-button"
+                    >
+                      <FaExternalLinkAlt /> Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

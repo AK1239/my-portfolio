@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { FaGithub, FaExternalLinkAlt, FaGooglePlay, FaApple } from "react-icons/fa";
 
 const projects = [
@@ -13,6 +14,7 @@ const projects = [
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.akil.financetracker.finance_tracker",
     appStoreLink: "https://apps.apple.com/tz/app/pesatrack/id6805447133",
+    detailPageLink: "/pesatrack",
     techStack: ["Flutter", "Riverpod"],
   },
   {
@@ -88,13 +90,26 @@ const Projects = () => {
             >
               {/* Project Image */}
               <div className="w-full lg:w-1/2">
-                <div className="overflow-hidden rounded-xl shadow-lg">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
+                {project.detailPageLink ? (
+                  <Link
+                    to={project.detailPageLink}
+                    className="block overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+                    />
+                  </Link>
+                ) : (
+                  <div className="overflow-hidden rounded-xl shadow-lg">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
               </div>
 
               {/* Project Details */}
@@ -115,7 +130,7 @@ const Projects = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                   {project.githubLink && (
                     <a
                       href={project.githubLink}
